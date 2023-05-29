@@ -1,0 +1,11 @@
+// const LOGIN_ID = "email";
+// const PASSWORD_ID = "password";
+// export {LOGIN_ID, PASSWORD_ID};
+export const LOGIN_ID = "email";
+export const PASSWORD_ID = "password";
+export const PASS_XPATH='//*[@id="password"]';
+export const BUTTON_SIGIN='//*[@id="root"]/div/div/div/div/div[2]/div[1]/div/div[2]/form/div[3]/div[3]/button';
+export const TOOL_CARDS='//*[@id="root"]/div/div';
+export const BUTTON_TOOL_ADMIN='//*[@id="root"]/div/div/div[1]/div/div[2]/button';
+export const BUTTON_TOOL_USER='//*[@id="root"]/div/div/div[2]/div/div[2]/button';
+export const MENU_LOGOUT='//*[@id="root"]/div/header/div/div/div[4]/div/a';

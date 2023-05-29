@@ -1,0 +1,26 @@
+{
+  "name": "selenium-javascript-automatedtest-pom",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Selenium Webdriver project using JavaScript and Mocha",
+  "author": "Eliane Netto",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 500000",
+    "selenium": "mocha --timeout 500000 index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elianenettoportal/Selenium-JavaScript-AutomatedTest-POM.git"
+  },
+  "dependencies": {
+    "chromedriver": "^113.0.0",
+    "dotenv": "^16.0.3",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.9.2"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
