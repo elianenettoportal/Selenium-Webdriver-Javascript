@@ -12,6 +12,47 @@ export default class LoginPage extends BasePage{
     this.closePage();
   }
 
+  async get_page_title(){
+    return await driver.getTitle();
+  }
+
+  async get_div_sigin(){
+    try{
+      await driver.findElement(By.xpath('//*]/div/div/div/div/div[2]/div[1]/div/div[2]'));
+      return true;
+    }catch(err){
+      this.setErrorMessage(err);
+      return false;
+    }
+  }
+
+  async get_cards_tools(){
+    try{
+      return await driver.findElement(By.xpath('//*]/div/div/div/div/div[2]/div[1]/div/div[2]'));
+    }catch(err){
+      this.setErrorMessage(err);
+      return undefined;
+    }
+  }
+
+  async get_dashboard_admin(){
+    try{
+      return await driver.findElement(By.xpath('//*]/div/div/div/div/div[2]/div[1]/div/div[2]'));
+    }catch(err){
+      this.setErrorMessage(err);
+      return undefined;
+    }
+  }
+
+  async get_logout_pageTitle(){
+    try{
+      return await driver.findElement(By.xpath('//*]/div/div/div/div/div[2]/div[1]/div/div[2]'));
+    }catch(err){
+      this.setErrorMessage(err);
+      return undefined;
+    }
+  }
+
   async login_process(credentials){
     await driver.findElement(By.id(LOGIN_ID)).sendKeys(credentials.user);
     //get input password set credential password in the input
