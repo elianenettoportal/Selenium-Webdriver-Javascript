@@ -25,9 +25,10 @@
     b) Create the Login Page Class that extends the Base Page
     c) Implement script in the loginpage-test
 
-To run local tests
+- To run local tests
 npm test
 
-13. Install Mocha Reporter
-    npm install --save-dev mochawesome
-    npx mocha --test --reporter mochawesome
+13. Install Mocha Reporter<br>
+    > npm install --save-dev 
+    Run mochawesome<br>
+    > npx mocha --test --reporter mochawesome<br>
